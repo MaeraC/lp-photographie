@@ -23,7 +23,7 @@ function Header() {
         <header>
             <nav className="header-nav">
                 {images.map((image) => (
-                    <Link to="/" className="logo"><img src={image.image} alt="Logo LP Studio "/>LP Photographie</Link>
+                    <Link to="/" className="logo"><img src={image.image} alt="Logo LP Studio "/><span>LP Photographie</span></Link>
                 ))}
                 <ul>
                     <li><Link to="/">Réalisations</Link></li>
