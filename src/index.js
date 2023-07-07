@@ -10,11 +10,13 @@ import Architecture from './pages/Architecture'
 import Mode from './pages/Mode'
 import About from './pages/About'
 import Footer from './components/Footer'
+import Loader from './components/Loader'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Router>
+      <Loader />
       <Routes>
         <Route exact path="/" element={<App />} />
         <Route exact path="/portraits" element={<Portraits />} />
