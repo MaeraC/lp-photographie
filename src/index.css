@@ -1,13 +1,166 @@
-body {
+* {
+  box-sizing: border-box;
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+}
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 18px;
+}
+img {
+  object-fit: cover;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: black;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/** HEADER ***********************************************************/
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 20px;
+  padding-left: 0;
+  font-family: 'Playfair Display', serif;
+  border-bottom: solid #808080c6 1px;
+}
+.header-nav ul {
+  display: flex;
+}
+.header-nav ul li {
+  margin: 0 20px;
+}
+.header-nav ul li:hover {
+  text-decoration: underline;
+  transition: 0.3s;
+}
+.header-nav img {
+  width: 50px;
+}
+.header-nav .logo {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+}
+/** MENU ***********************************************************/
+.menu li {
+  background-size: cover;
+  height: 300px;
+  width: 100%;
+  border-bottom: white 5px solid;
+  position: relative;
+}
+.menu li a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.467);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+  color: white;
+  text-transform: uppercase;
+}
+.portrait {
+  background: url(../public/assets/image6.jpg) fixed 100% 100%;
+}
+.mariage {
+  background: url(../public/assets/mariage.jpg) fixed;
+}
+.famille {
+  background: url(../public/assets/famille.jpg) fixed;
+}
+.mode {
+  background: url(../public/assets/mode.jpg) fixed;
+}
+.architecture {
+  background: url(../public/assets/architecture.jpg) fixed;
+}
+
+/** GALERIES ***********************************************************/
+.page .galerie {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 30px;
+  padding-top: 20px;
+}
+.page .galerie img {
+  width: 30%;
+  height: 350px;
+  margin: 20px;
+  cursor: pointer;
+}
+.page .galerie img:hover {
+  transform: scale(1.05);
+  transition: 0.3s ease-in-out;
+}
+.lightbox {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: rgb(0, 0, 0);
+}
+.lightbox img {
+  width: auto;
+  height: 100%;
+}
+.prev-button, .next-button, .close-btn {
+  position: absolute;
+  color: rgba(255, 255, 255, 0.293);
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 50px;
+  cursor: pointer;
+}
+.prev-button {
+  left: 20px;
+}
+.next-button {
+  right: 20px;
+}
+.close-btn {
+  top: 20px;
+  right: 20px;
+  font-size: 25px;
+}
+
+/** ABOUT ***********************************************************/
+.about {
+  margin: 5% 20%;
+  font-family: 'Playfair Display', serif;
+}
+.about p {
+  line-height: 25px;
+  font-size: 16px;
+}
+.about a:hover {
+  color: rgb(255, 30, 0);
+}
+
+/** FOOTER ***********************************************************/
+footer {
+  font-family: 'Playfair Display', serif;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  border-top: solid #808080c6 1px;
 }
