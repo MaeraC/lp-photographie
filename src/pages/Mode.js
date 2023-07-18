@@ -1,4 +1,4 @@
-import Header from "../components/Header"
+
 import { useState, useEffect } from 'react'
 
 function Mode() {
@@ -47,7 +47,6 @@ function Mode() {
 
     return (
         <div className="page">
-            <Header />
             <section className="galerie">
                 {images.map((image, index) => (
                     <img src={image.image} 

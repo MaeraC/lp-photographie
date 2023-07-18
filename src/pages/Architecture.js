@@ -1,4 +1,4 @@
-import Header from "../components/Header"
+
 import { useState, useEffect } from 'react'
 
 function Architecture() {
@@ -6,7 +6,6 @@ function Architecture() {
     const [lightboxVisible, setLightboxVisible] = useState(false)
     const [currentImageIndex, setCurrentImageIndex] = useState(0)
 
-    // Récupère les images du fichier jSon
     useEffect(() => {
         fetchImages()
     }, [])
@@ -23,10 +22,7 @@ function Architecture() {
     }
 
     const openLightbox = (index) => {
-        // Définit l'index de l'image actuellement cliquée
-        //currentImage.current = index
         setCurrentImageIndex(index)
-        // Ouvre la lightbox
         setLightboxVisible(true)
         
     }
@@ -47,7 +43,6 @@ function Architecture() {
 
     return (
         <div className="page">
-            <Header />
             <section className="galerie">
                 {images.map((image, index) => (
                     <img src={image.image} 
