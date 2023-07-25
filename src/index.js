@@ -20,8 +20,8 @@ root.render(
       <Loader />
       <Header />
       <Routes>
-        <Route exact path="/about" element={<About />} />
-        <Route exact path="/" element={<Menu />} />
+        <Route exact path="/" element={<About />} />
+        <Route exact path="/menu" element={<Menu />} />
         <Route path="/portraits" element={<Portraits />} />
         <Route path="/mariage" element={<Mariage/>} />
         <Route path="/famille" element={<Famille />} />
