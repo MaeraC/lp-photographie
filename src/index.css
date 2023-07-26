@@ -116,24 +116,6 @@ p {
   color: white;
   text-transform: uppercase;
 }
-@media screen and (max-width: 900px) {
-  .menu li a {
-    font-size: 70px;
-  }
-}
-@media screen and (max-width: 600px) {
-  .menu li a {
-    font-size: 50px;
-  }
-}
-@media screen and (max-width: 400px) {
-  .menu li a {
-    font-size: 40px;
-  }
-  .menu li {
-    height: 200px;
-  }
-}
 .portrait {
   background: url(../public/assets/image6.jpg) fixed 100% 100%;
 }
@@ -149,6 +131,40 @@ p {
 .architecture {
   background: url(../public/assets/architecture.jpg) fixed;
 }
+@media screen and (max-width: 900px) {
+  .menu li a {
+    font-size: 70px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .menu li a {
+    font-size: 50px;
+  }
+  .portrait {
+    background: url(../public/assets/image6.jpg) 100% 100%;
+  }
+  .mariage {
+    background: url(../public/assets/mariage.jpg);
+  }
+  .famille {
+    background: url(../public/assets/famille.jpg);
+  }
+  .mode {
+    background: url(../public/assets/mode.jpg);
+  }
+  .architecture {
+    background: url(../public/assets/architecture.jpg);
+  }
+}
+@media screen and (max-width: 400px) {
+  .menu li a {
+    font-size: 40px;
+  }
+  .menu li {
+    height: 200px;
+  }
+}
+
 
 /** GALERIES ***********************************************************/
 .page .galerie {
