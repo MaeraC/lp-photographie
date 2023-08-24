@@ -483,7 +483,7 @@ footer {
 
 
 .bg-parallax {
-  background: url(./3.jpg) fixed;
+  background: url(./3.jpg);
   background-size: cover;
   height: 150px;
   margin-top: 80px;

@@ -10,7 +10,7 @@ function About() {
             <HeaderHP />
             <BgParallax />
             <Types />
-            <BgParallax />
+           
             <Presentation />
         </div>
     )

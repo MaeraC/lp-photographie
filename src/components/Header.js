@@ -26,8 +26,8 @@ function Header() {
                     <Link to="/" className="logo"><img src={image.image} alt="Logo LP Studio "/><span>LP Photographie</span></Link>
                 ))}
                 <ul>
-                    <li><Link to="/menu">Réalisations</Link></li>
-                    <li><Link to="/">À propos</Link></li>
+                    <li><Link to="/">Réalisations</Link></li>
+                    <li><Link to="/a-propos">À propos</Link></li>
                 </ul>
             </nav>
         </header>
