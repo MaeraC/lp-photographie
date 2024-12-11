@@ -97,7 +97,7 @@ p {
 /** MENU ***********************************************************/
 .menu li {
   background-size: cover;
-  height: 300px;
+  height: 400px;
   width: 100%;
   border-bottom: white 5px solid;
   position: relative;
@@ -112,7 +112,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 100px;
+  font-size: 80px;
   color: white;
   text-transform: uppercase;
 }
