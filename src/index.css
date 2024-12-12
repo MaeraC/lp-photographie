@@ -234,8 +234,8 @@ p {
 }
 @media screen and (max-width: 500px) {
   .page .galerie img {
-    width: 100%;
-    height: 250px;
+    width: 80%;
+    height: 450px;
   }
 }
 /** FOOTER ***********************************************************/
